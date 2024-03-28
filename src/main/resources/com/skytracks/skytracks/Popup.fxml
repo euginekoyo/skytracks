@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="300.0" fx:controller="com.skytracks.skytracks.ReserveFlightController" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER" spacing="20.0" layoutX="50.0" layoutY="50.0">
+            <VBox alignment="CENTER">
+            <Label text="Additional charges may apply depending" style="-fx-font-size: 12; -fx-text-fill: #964B00;" />
+            <Label text="on the ticket class you prefer" style="-fx-font-size: 12; -fx-text-fill: #964B00;" />
+            </VBox>
+            <HBox spacing="10.0">
+                <RadioButton fx:id="firstClassRadioButton" text="First class" />
+                <RadioButton fx:id="businessClassRadioButton" text="Business class" />
+                <RadioButton fx:id="economyClassRadioButton" text="Economy class" />
+            </HBox>
+
+            <HBox spacing="10.0">
+                <Label text="Choose from the dropdown:" />
+                <ComboBox fx:id="dropdownMenu" prefWidth="150.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Route 1" />
+                            <String fx:value="Route 2" />
+                            <String fx:value="Route 3" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </HBox>
+
+            <HBox spacing="10.0" alignment="BOTTOM_RIGHT" >
+                <Button onAction="#handleCancelButtonAction" text="Cancel" />
+                <Button onAction="#handleBookButtonAction" text="Book" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

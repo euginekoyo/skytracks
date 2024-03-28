@@ -1,0 +1,70 @@
+.text
+{
+    -fx-text-fill : #0c0101;
+}
+
+.text-field {
+    -fx-border-color: #005792;
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 2em;
+
+}
+
+
+.button
+{
+-fx-background-color : #fd5f00;
+-fx-text-fill : #FFFFFF;
+}
+
+.button:pressed
+{
+-fx-background-color : #fd8c48;
+}
+
+.button:hover
+{
+    -fx-background-color : #f17a7c;
+    -fx-text-fill: #ffffff;
+}
+
+
+.scroll-pane {
+    -fx-background-color: #ffffff;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color: #ffffff;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ffffff;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #0c0101;
+    -fx-background-radius: 18em;
+    -fx-border-radius: 18em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 18em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: #ffffff;
+}
+
+
+.mbutton {
+    -fx-background-color: #13334c;
+}
+.mbutton:hover
+ {
+     -fx-background-color : #005792;
+ }

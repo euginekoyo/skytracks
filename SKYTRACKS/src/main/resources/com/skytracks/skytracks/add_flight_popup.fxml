@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white" fx:controller="com.skytracks.skytracks.AddFlightController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="addButton" onAction="#handleAddButtonAction" layoutX="489.0" layoutY="355.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" stylesheets="@style.css" text="Add" />
+      <Button layoutX="396.0" onAction="#handleCloseButtonAction" layoutY="355.0" mnemonicParsing="false" stylesheets="@style.css" text="Cancel" />
+      <TextField fx:id="flightIdTextField" layoutX="39.0" layoutY="62.0" stylesheets="@style.css" />
+
+      <TextField fx:id="destinationTextField" layoutX="367.0" layoutY="62.0" stylesheets="@style.css" />
+      <TextField fx:id="departureTimeTextField" layoutX="39.0" layoutY="129.0" stylesheets="@style.css" />
+      <TextField fx:id="flightTimeTextField" layoutX="368.0" layoutY="129.0" stylesheets="@style.css" />
+      <TextField fx:id="costTextField" layoutX="39.0" layoutY="200.0" stylesheets="@style.css" />
+      <TextField fx:id="planeTypeTextField" layoutX="367.0" layoutY="200.0" stylesheets="@style.css" />
+      <Label layoutX="39.0" layoutY="41.0" text="Flight ID" />
+      <Label layoutX="367.0" layoutY="41.0" text="Destination" />
+      <Label layoutX="39.0" layoutY="108.0" text="Departure time" />
+      <Label layoutX="367.0" layoutY="108.0" text="Flight time" />
+      <Label layoutX="39.0" layoutY="179.0" text="Cost" />
+      <Label layoutX="367.0" layoutY="179.0" text="Plane type" />
+   </children>
+</AnchorPane>

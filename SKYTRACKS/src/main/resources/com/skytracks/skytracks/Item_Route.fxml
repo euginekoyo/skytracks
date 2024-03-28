@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="itemRoute" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="940.0" spacing="80.0"
+      fx:controller="com.skytracks.skytracks.RouteItemController" style="-fx-background-color: #ffffff; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@./images/plane.png" />
+            </image>
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+        </ImageView>
+        <Label fx:id="flightNumberLabel" text="CX0012" textFill="#0c0101"/>
+        <Label fx:id="destinationLabel" text="Nairobi" textFill="#0c0101"/>
+        <Label fx:id="originLabel" text="Today 0800hrs" textFill="#0c0101"/>
+        <Label fx:id="durationLabel" text="45 mins" textFill="#0c0101"/>
+        <Label fx:id="aircraftLabel" text="Boeing 747" textFill="#0c0101"/>
+        <Label fx:id="pilot" text="Samwel Otieno" textFill="#0c0101"/>
+        <Button fx:id="activeButton" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #fd5f00; -fx-border-radius: 20; -fx-background-color: transparent; -fx-text-fill: #0c0101" text="active">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Button>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</HBox>
